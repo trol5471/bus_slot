@@ -4,6 +4,15 @@ body {
     font-family: sans-serif;
     padding : 20px;
 }
+label {
+    font-size: 25px;
+    color: #fff;
+}
+p {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
 div {
     font-size: 300px;
     font-weight: bold;
