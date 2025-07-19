@@ -10,6 +10,7 @@ button.addEventListener('click', () => {
     document.getElementById('slot3').textContent = slots[2];
 
     if (slots[0] === slots[1] && slots[1] === slots[2]) {
+        new Audio('https://chakushinon123.com/wp-content/uploads/2022/04/%E5%8A%B9%E6%9E%9C%E9%9F%B3%E3%82%B8%E3%83%A3%E3%82%B0%E3%83%A9%E3%83%BC-%E3%83%9A%E3%82%AB%E3%83%AA.mp3').play();
         result.textContent = 'Jackpot! You win!';
         result.style.color = 'yellow';
     }
