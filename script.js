@@ -1,6 +1,7 @@
-const symbols = ['🍒','🍋','🍊','⭐️','🔔'];
+const symbols = ["🍒", "🍋", "🍊", "🍇", "🔔", "⭐"];
 const button = document.getElementById('bus-button');
 const result = document.getElementById('result');
+const audio = new Audio('misae.mp3');
 
 button.addEventListener('click', () => {
     const slots = [0 , 0, 0].map(() => symbols[Math.floor(Math.random() * symbols.length)]);
@@ -17,6 +18,8 @@ button.addEventListener('click', () => {
         result.style.color = 'red';
     }
 
-    // new Audio('https://www.soundjay.com/button/sounds/button-3.mp3').play();
+    audio.pause();
+    audio.currentTime = 0;
+    audio.play();
 
 });
